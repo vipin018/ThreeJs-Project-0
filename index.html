@@ -1,13 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="main w-full">
+    <nav class="fixed w-full top-0 flex justify-between items-center  left-0 px-5">
+      <img class=" w-[200px] object-contain  mix-blend-lighten filter saturation-125 contrast-150 "
+        src="./img/center.png" alt="">
+      <div id="nav-elem" class="flex gap-5 items-center">
+        <ul class="flex justify-around items-center gap-10 text-white">
+          <!-- <li><a href="#home" class="hover:text-yellow-500">Home</a></li> -->
+          <a class="nav-links" href="#games" class="tracking-tight text-white transition-all">Games</a>
+          <a class="nav-links" href="#news" class="tracking-tight text-white  transition-all">News</a>
+          <a class="nav-links" href="#forums" class="tracking-tight text-white transition-all">Forums</a>
+          <a class="nav-links" href="#reviews" class="tracking-tight text-white  transition-all">Reviews</a>
+          <a class="nav-links" href="#contact" class="tracking-tight text-white transition-all">Contact</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="w-full h-screen overflow-hidden">
+      <img
+        class="absolute top-1/2 z-20 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-lighten filter saturation-125 contrast-150 "
+        src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-bvn9rs4wqee91.png?width=1920&format=png&auto=webp&s=564b9bbd9aa6e74f8ff47e83f2f977468df73f0b"
+        alt="">
+      <!-- <div class="w-[90rem] h-[100rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1] rounded-full bg-[#FFEC1F] blur-3xl"></div> -->
+      <canvas id="canvas"></canvas>
+    </div>
+    <div id="page2" class="w-full h-screen flex items-center justify-center   relative bg-black">
+    <h1 class="credit"> Three <span>Js</span></h1>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
